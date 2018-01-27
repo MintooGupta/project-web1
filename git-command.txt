@@ -1,0 +1,30 @@
+git init //create a git repo
+
+git status //for checking the file|folder which is modified|new|untracked|delete
+
+git add <file name| folder name | .>
+git add . // for all modified|new|untracked|deleted files 
+git gui // for graphic mode
+git diff <opt:fileName> //difference between the previous repo and current repo 
+
+git commit -m "your message" //for commit files with message when you have added file using git add command
+
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+
+
+
+//Below threee cmd is needed when you create a local repo from git init command
+git remote add <folder name> <git repo url>  //eg. git remote add project-web1 https://github.com/MintooGupta/project-web1.git
+git push <folder name> //only first time needed for sending data on repository
+git push --set-upstream <folderName> <branchName> //eg git push --set-upstream project-web1 master
+
+
+All linux|window command is accepted by git bash
+cd ..
+dir
+ls
+touch
+vm

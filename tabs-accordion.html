@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="Images/slider-3.jpg">
+
+    <title>HTML5 Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+    <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+ 	<script src="bootstrap/js/holder.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="bootstrap/css/customs.css">
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/css/carousel.css" rel="stylesheet" />
+    <link href="bootstrap/css/reset.css" rel="stylesheet" />
+  </head>
+
+<body>
+
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-md-3 bg-danger">
+<video width="220" height="180" controls>
+<source src="media/video/dynamic.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+<div class="col-md-3 bg-info">
+<audio controls>
+<source src="media/audio/Tofa Tafa Laya.mp3" type="audio/mpeg">
+</audio>
+<p>The HTML5 audio element specifies a standard way to embed audio in a web page.</p>
+<p>The HTML5 video element specifies a standard way to embed a video in a web page.</p>
+<p>There are audio video track and controls</p>
+</div>
+<div class="col-md-3 bg-primary">
+<object width="100%" height="140px" data="snippet.html"></object>
+<p>It is used to embed plug-ins (like Java applets, PDF readers, Flash Players) in web pages.</p>
+</div>
+
+<div class="col-md-3 bg-subscribe">
+<iframe width="100%" height="200" src="https://www.youtube.com/embed/XGSy3_Czz8k">
+</iframe>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-3 bg-success">
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script>
+<p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+<p>A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.</p>
+</div>
+
+<div class="col-md-3 bg-transparent">
+<svg width="100" height="100">
+<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+<p>SVG stands for Scalable Vector Graphics
+SVG is used to define graphics for the Web
+SVG is a W3C recommendation</p>
+<p>SVG has several methods for drawing paths, boxes, circles, text, and graphic images.</p>
+</div>
+<div class="col-md-3 bg-warning">
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+</div>
+<div class="col-md-3">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3501.751067883266!2d77.28403831508273!3d28.63722193241599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sv3s+mall!5e0!3m2!1sen!2sin!4v1509607628256" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-3 bg-danger">
+<script>
+$(document).ready(function(){
+    $("#test1").bind("click", function(){
+        alert("The paragraph was clicked.");
+    });
+});
+</script>
+<p id="test1">Hello My frends</p>
+</div>
+<div class="col-md-3 bg-info">
+<script>
+$(document).ready(function(){
+    $("input").blur(function(){
+        alert("This input field has lost its focus.");
+    });
+});
+</script>
+Enter your name: <input type="text">
+<p>Write something in the input field, and then click outside the field to lose focus (blur).</p>
+</div>
+<div class="col-md-3 bg-primary">
+<script>
+$(document).ready(function(){
+    $("input").change(function(){
+        alert("The text has been changed.");
+    });
+});
+</script>
+<input type="text">
+
+<p>Write something in the input field, and then press enter or click outside the field.</p>
+</div>
+<div class="col-md-3 bg-success">
+<script>
+$(document).ready(function(){
+    $("#test2").click(function(){
+        alert("The paragraph was clicked.");
+    });
+});
+</script>
+<p id="test2">Click on this paragraph.</p>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-3">
+<script>
+$(document).ready(function(){
+    $("#test3").dblclick(function(){
+        alert("The paragraph was double-clicked.");
+    });
+});
+</script>
+<p id="test3">Double-click on this paragraph.</p>
+</div>
+<div class="col-md-3">
+<script>
+$(document).ready(function(){
+    $("div").delegate("p", "click",function(){
+        $("p").css("background-color", "pink");
+    });
+});
+</script>
+<div style="background-color:yellow;">
+  <p>This is a paragraph inside a div element.</p>
+</div>
+
+<p>This is a paragraph.</p>
+</div>
+<div class="col-md-3">
+<script>
+$(document).ready(function(){
+    $("p").live("click", function(){
+        $(this).slideToggle();
+    });
+    $("button").click(function(){
+        $("p").die();
+    });
+});
+</script>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Click any p element to make it disappear.</p>
+
+<button>Remove event handlers, added with the live() method, for p elements</button><br><br>
+</div>
+<div class="col-md-3">
+
+<script>
+$(document).ready(function(){
+    $("img").error(function(){
+        $("img").replaceWith("<p>Error loading image!</p>");
+    });
+    $("button").click(function(){
+        $("img").error();
+    });
+});
+</script>
+
+<img src="img_pulpitrock.jpg" alt="Pulpit rock" width="284" height="213"><br>
+
+<button>Trigger error event for the image</button>
+</div>
+</div>
+
+
+
+
+<div class="row">
+<div class="col-md-3">
+
+<script>
+$(document).ready(function(){
+    $("h1, h2, p").click(function(event){
+        alert(event.currentTarget === this);
+    });  
+});
+</script>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+
+</div>
+<div class="col-md-3">
+<script>
+$(document).ready(function(){
+    $("p").each(function(i){
+        $(this).on("click", {x:i}, function(event){
+            alert("The " + $(this).index() + ". paragraph has data: " + event.data.x);
+        });
+    });
+});
+</script>
+<div style="color:red">Click on each p element to return the data passed with the on() method.</div>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>This is another paragraph.</p>
+</div>
+<div class="col-md-3">
+<script>
+$(document).ready(function(){
+    $("div").on("click", "button", function(event){
+        $(event.delegateTarget).css("background-color", "pink");
+    });
+});
+</script>
+<div style="background-color:yellow">
+  <p>Click the button to change the background color of this div.</p>
+  <button>Click me!</button>
+</div>
+
+<div style="background-color:yellow">
+  <p>Click the button to change the background color of this div.</p>
+  <button>Click me!</button>
+</div>
+</div>
+<div class="col-md-3">
+<script>
+$(document).ready(function(){
+    $("input").focus(function(){
+        $("span").css("display", "inline").fadeOut(2000);
+    });
+});
+</script>
+
+<span>Nice to meet you!</span>
+<p>Click in the input field to get focus.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

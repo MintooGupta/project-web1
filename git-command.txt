@@ -2,7 +2,8 @@ git init //create a git repo
 git clone <http:url>
 git pull // for updateing your repo
 git checkout <branchName> //for switching the branch  eg. git checkout ui
-
+git stash //hide all changes
+git stash pop //recover hided changes
 git status //for checking the file|folder which is modified|new|untracked|delete
 
 git add <file name| folder name | .>
@@ -31,3 +32,6 @@ dir
 ls
 touch
 vm
+
+
+

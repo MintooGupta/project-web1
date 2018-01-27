@@ -1,4 +1,7 @@
 git init //create a git repo
+git clone <http:url>
+git pull // for updateing your repo
+git checkout <branchName> //for switching the branch  eg. git checkout ui
 
 git status //for checking the file|folder which is modified|new|untracked|delete
 
